@@ -1,0 +1,26 @@
+.footer_logo{
+    width: 50px;
+}
+
+.ant-layout-footer{
+    padding: 0 !important;
+    height: 100px !important;
+}
+
+.footer_class{
+    display: flex;
+    flex-flow: row;
+    justify-content: center;
+    align-items: center;
+
+    width: 100vw;
+
+    background-color: rgb(36, 36, 36);
+    color: white !important;
+}
+.footer_class > *{
+    margin: 1em;
+}
+.footer_item > a{
+    color: white !important;
+}

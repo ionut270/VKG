@@ -41,7 +41,6 @@ export default class header extends React.Component {
                         <Avatar size={40} icon={<UserOutlined />} />
                     </Dropdown>,
                 </div>
-
             </div>
         )
     }
