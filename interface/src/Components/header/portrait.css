@@ -1,0 +1,19 @@
+@media (orientation: portrait) {
+  .header_logo {
+    width: 80px !important;
+    height: 90px;
+  }
+
+  .header_button_text,
+  .header_logo,
+  .header_space,
+  .header_extra {
+    display: none;
+  }
+  .header_class {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    background-color: lightgrey;
+  }
+}
