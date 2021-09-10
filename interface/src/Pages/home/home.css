@@ -1,7 +1,16 @@
+.home_main{
+    width: 100vw !important;
+}
+
 #home_module_1{
     display: flex;
     flex-flow: column;
     justify-content: center;
+    align-items: center;
 
-    width: 100vw !important;
+    padding: 4em;
+}
+
+#home_module_1 > p {
+    font-size: 26.17924px;
 }
