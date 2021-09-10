@@ -2,7 +2,8 @@ import React from 'react';
 import logo from '../../props/logo.png'
 
 import { Breadcrumb } from 'antd';
-import './footer.css'
+import './landscape.css'
+import './portrait.css'
 
 export default class footer extends React.Component {
     render() {

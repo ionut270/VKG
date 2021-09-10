@@ -1,0 +1,5 @@
+@media (orientation: portrait) {
+    .footer_class{
+        display: none !important;
+    }
+}

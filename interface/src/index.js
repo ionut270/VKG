@@ -7,7 +7,9 @@ import { Layout } from 'antd';
 import Header from './Components/header/header.jsx'
 import Footer from './Components/footer/footer.jsx'
 
-import Home from './Pages/index'
+import Home from './Pages/home/index'
+
+import './index.css'
 
 class App extends React.Component {
   state = {

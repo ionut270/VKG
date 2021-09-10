@@ -1,19 +1,66 @@
 @media (orientation: portrait) {
   .header_logo {
-    width: 80px !important;
-    height: 90px;
+    width: 50px !important;
+    height: 60px;
+  }
+
+  .landscape{
+    display: none !important;
+  }
+
+  .logo_container{
+
+    background-color: white !important;
+    border: solid 1px rgb(200, 200, 200) !important;
+
+    position: fixed !important;
+    top:0;
+
+    width: 100vw !important;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 
   .header_button_text,
-  .header_logo,
   .header_space,
   .header_extra {
     display: none;
   }
+
   .header_class {
-    position: absolute;
+    position: fixed;
     bottom: 0;
-    width: 100%;
-    background-color: lightgrey;
+    left : 0;
+    background-color: white;
+    border: solid 1px rgb(200, 200, 200) !important;
+
+    display: flex;
+    flex-flow: row;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    margin: 0 !important;
+
+    padding: .5em;
+  }
+
+  .header_option{
+    font-size: 2em !important;
+    width: 2em !important;
+    border: none !important;
+    background: none !important;
+
+    margin-left: 1%;
+    margin-right: 1%;
+  }
+  .header_badge_cart{
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+  }
+  .mobile_cart{
+    margin: 0;
+    font-size: 2.5em !important;
   }
 }

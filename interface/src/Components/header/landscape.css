@@ -50,4 +50,8 @@
   .header_extra {
     width: 38% !important;
   }
+
+  .header_mobile{
+    display: none;
+  }
 }

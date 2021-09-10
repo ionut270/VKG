@@ -1,0 +1,24 @@
+@media (orientation: landscape) {
+    .footer_logo {
+        width: 50px;
+    }
+    .ant-layout-footer {
+        padding: 0 !important;
+        height: 100px !important;
+    }
+    .footer_class {
+        display: flex;
+        flex-flow: row;
+        justify-content: center;
+        align-items: center;
+        width: 100vw;
+        background-color: rgb(221, 221, 221);
+        color: rgb(0, 0, 0) !important;
+    }
+    .footer_class>* {
+        margin: 1em;
+    }
+    .footer_item>a {
+        color: rgb(0, 0, 0) !important;
+    }
+}

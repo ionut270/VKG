@@ -33,10 +33,15 @@ export default class header extends React.Component {
         return (
             <div className="header_class">
                 {/* Just empty space to center the menu */}
+
+                <div className="logo_container header_mobile">
+                    <img className="header_logo" src={logo} alt="vikings logo" />
+                </div>
+
                 <div className="header_space"></div>
 
                 <Button className="header_option" href="/home">
-                    <HomeOutlined /> 
+                    <HomeOutlined />
                     <div className="header_button_text">Acasa </div>
                 </Button>
                 <Button className="header_option" href="/shop">
@@ -44,7 +49,7 @@ export default class header extends React.Component {
                     <div className="header_button_text">Magazin </div>
                 </Button>
 
-                <img className="header_logo" src={logo} alt="vikings logo" />
+                <img className="header_logo landscape" src={logo} alt="vikings logo" />
 
                 <Button className="header_option" href="/about">
                     <InfoCircleOutlined />
@@ -55,8 +60,16 @@ export default class header extends React.Component {
                     <div className="header_button_text">Contact </div>
                 </Button>
 
+                <Button className="header_option header_mobile mobile_cart" href="/cart">
+                    <ShoppingCartOutlined />
+                </Button>
+
+                <Button className="header_option header_mobile" href="/profile">
+                    <UserOutlined />
+                </Button>
+
                 <div className="header_extra">
-                    <Dropdown overlay={Cartdropdown(items,changeQuantity)}>
+                    <Dropdown overlay={Cartdropdown(items, changeQuantity)}>
                         <Badge className="header_shopping_cart" count={items.length}>
                             <ShoppingCartOutlined className="header_cart" />
                         </Badge>

@@ -1,0 +1,22 @@
+.ant-layout-header{
+    background: none !important;
+}
+
+.tiny_object{
+    width: 30.9px !important;
+}
+.small_object{
+    width: 49.44px !important;
+}
+.normal_object{
+    width: 100px !important;
+}
+.large_object{
+    width: 116.18px !important;
+}
+.big_object{
+    width: 132.36px !important;
+}
+.huge_object{
+    width: 148.54px !important;
+}
