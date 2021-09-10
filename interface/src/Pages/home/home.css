@@ -1,0 +1,7 @@
+#home_module_1{
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+
+    width: 100vw !important;
+}

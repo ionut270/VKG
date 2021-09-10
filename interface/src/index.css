@@ -1,22 +1,27 @@
 .ant-layout-header{
     background: none !important;
 }
-
+.nano_object{
+    width: 26.17924px !important;
+}
 .tiny_object{
-    width: 30.9px !important;
+    width: 42.358010320000005px !important;
 }
 .small_object{
-    width: 49.44px !important;
+    width: 68.53526069776001px !important;
 }
 .normal_object{
-    width: 100px !important;
+    width: 110.8900518089757px !important;
 }
 .large_object{
-    width: 116.18px !important;
+    width: 179.42010382692268px !important;
 }
 .big_object{
-    width: 132.36px !important;
+    width: 290.30172799196095px !important;
 }
 .huge_object{
-    width: 148.54px !important;
+    width: 469.70819589099284px !important;
+}
+.mega_object{
+    width: 759.9878609516264px !important
 }
