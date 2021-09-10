@@ -1,7 +1,9 @@
 import React from 'react';
 
-import logo from '../../props/logo.png'
+import logo from '../../props/logo-bg.png'
 import './home.css'
+
+import Preview from './preview/preview'
 
 export default class Home extends React.Component {
     render() {
@@ -11,6 +13,7 @@ export default class Home extends React.Component {
                 <img className="large_object" src={logo} />
                 <p>Bine ai venit la proiectul Vikingilor</p>
             </div>
+            <Preview />
         </div>
         )
     }

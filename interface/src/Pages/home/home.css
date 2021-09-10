@@ -1,16 +1,20 @@
-.home_main{
+.home_main {
     width: 100vw !important;
 }
 
-#home_module_1{
+#home_module_1 {
+    background: rgb(2, 0, 36);
+    background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(193, 12, 12, 1) 100%);
+
     display: flex;
     flex-flow: column;
     justify-content: center;
     align-items: center;
-
     padding: 4em;
 }
 
-#home_module_1 > p {
+#home_module_1>p {
     font-size: 26.17924px;
+    text-align: center;
+    color: white !important;
 }

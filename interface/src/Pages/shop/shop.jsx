@@ -3,7 +3,7 @@ import React from 'react'
 import './shop.css'
 import { Image } from 'antd'
 
-import image_slide from "C:\\Users\\iosifneg\\Desktop\\JS\\Projects\\VKG Company\\VKG\\interface\\src\\props\\1.jpeg";
+import image_slide from "../../props/1.jpeg";
 
 export default class Shop extends React.Component {
   constructor() {
