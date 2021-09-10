@@ -1,7 +1,7 @@
 import React from 'react';
 
 import logo from '../../props/logo.png'
-import './index'
+import './home.css'
 
 export default class Home extends React.Component {
     render() {
