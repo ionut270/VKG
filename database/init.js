@@ -1,3 +1,4 @@
+const e = require("express");
 const log4js = require("log4js");
 var log = log4js.getLogger("[connect database]");
 if(process.env.MODE==="DEBUG"){
@@ -10,12 +11,16 @@ const uri = `mongodb+srv://${process.env.MONGO_USERNAME}:${process.env.MONGO_PAS
 const client = new MongoClient(uri, { useNewUrlParser: true, useUnifiedTopology: true });
 
 function connect(){
-    await client.connect(err => {
-        if(err){ 
-            log.error(err)
-        }
-    });
-    return client;
+    return new Promise((resolve,reject)=>{
+        client.connect(err => {
+            if(err){ 
+                log.error(err)
+                reject(err);
+            } else{ 
+                resolve(client);
+            }
+        });
+    })
 }
 
 // a function that returns the client
