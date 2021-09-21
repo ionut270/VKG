@@ -1,10 +1,14 @@
 require("dotenv").config();
+const Log = require('./utils/logger');
 
-const log4js = require("log4js");
-var log = log4js.getLogger("[Root]");
-if(process.env.MODE==="DEBUG"){
-    log.level = "debug";
-}
+require('mongoose').connect(`mongodb+srv://${process.env.MONGO_USERNAME}:${process.env.MONGO_PASSWORD}@${process.env.MONGO_ARGS}`,{dbName: "vkg"},function(err){
+    const log = new Log(['MONGOOSE','CONNECT']);
+    if(err){
+        log.error(err);
+    } else {
+        log.out(`Connected to mongoDB server !`)
+    }
+});
 
 const express = require("express")
 const cors = require("cors");
@@ -16,8 +20,10 @@ app.use(express.json()); //Used to parse JSON bodies
 
 app.use('/api',require("./api/router"))
 
-app.listen(8080, (err) => {
+app.listen(process.env.PORT, (err) => {
+    const log = new Log(['APP','LISTENER'])
+
     if (err) log.err(err);
-    else log.debug("Server up and running on 8080 !")
+    else log.out(`Server up and running on ${process.env.PORT} !`)
 })
 
