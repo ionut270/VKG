@@ -1,0 +1,13 @@
+.label_list{
+    display: flex;
+    flex-flow: row;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.label_list > .ant-tag {
+    width: 117px !important;
+    text-align: center;
+    margin-top: .5em !important;
+}

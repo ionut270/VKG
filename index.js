@@ -10,10 +10,12 @@ require('mongoose').connect(`mongodb+srv://${process.env.MONGO_USERNAME}:${proce
     }
 });
 
+const busboy = require('connect-busboy');
 const express = require("express")
 const cors = require("cors");
 const app = express();
 
+app.use(busboy()); // for file uploads &
 app.use(cors()); // enables Cross Origin Acess requests
 app.use(express.urlencoded({ extended: true })); //Parse URL-encoded bodies
 app.use(express.json()); //Used to parse JSON bodies

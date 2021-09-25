@@ -5,7 +5,10 @@ const itemSchema = new Schema({
     itemId: Number,
     extra: String,
     title: String,
-    print: String,
+    img:[{
+        data: Buffer,
+        contentType: String
+    }],
     rating: Number,
     purchase: String,
     details: String,

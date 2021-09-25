@@ -1,9 +1,21 @@
 #components-layout-demo-side .logo {
-    height: 32px;
-    margin: 16px;
-    background: rgba(255, 255, 255, 0.3);
-  }
-  
-  .site-layout .site-layout-background {
-    background: #fff;
-  }
+  height: 32px;
+  margin: 16px;
+  background: rgba(255, 255, 255, 0.3);
+}
+
+.site-layout .site-layout-background {
+  background: #fff;
+}
+
+body {
+  font-family: Roboto;
+  background-color: rgb(242, 242, 247);
+}
+
+.line{
+  display: flex;
+  flex-flow: row;
+  justify-content: center;
+  align-items: center;
+}
